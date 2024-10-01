@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exemple.js" defer></script>
+</head>
+<body>
+    <audio controls id="audio">
+        <source src="audio/sokodomo - MERRY-GO-ROUND (Feat. Zion.T, Wonstein) (Prod. Slom).mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="playAudio()">PLAY</button>
+    <button onclick="playAudio2()">PLAY 2</button>
+    <br>
+    <button onclick="clk_btn_stopAudio()">STOP</button>
+    <button onclick="clk_btn_mute()">MUTE</button>
+    <button onclick="clk_btn_volUp()">VOL+</button>
+    <button onclick="clk_btn_volDown()">VOL-</button>
+    <br>
+    <input type="range" min="0" max="1" step="0.2" id="vol" onchange="change_inp_vol()">
+    <input type="range" id="timer" min="0" max="0" step="0.1">
+    <span id="timer_span"></span>
+
+    <div id="div_text"></div>
+    <div id="resultat"></div>
+    Número <input id="input_numero" value="99">
+    <!-- <button onclick="
+        //en el event click, surt
+        //no es fará mai
+        //resultat.innerText = input_numero.value;
+
+        sumaValors();
+    ">CLICK</button> -->
+
+    <!-- exercici -->
+        Número 2 <input id="input_numero2">
+        <button onclick="
+        sumaValors();
+    ">CLICK</button>
+
+    <div id="llista_propietats"></div>
+</body> 
+</html>
